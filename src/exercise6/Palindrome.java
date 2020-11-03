@@ -12,7 +12,7 @@ public class Palindrome {
         int reversedNumber = 0;
         int manipulatedNumber = number;
         while(manipulatedNumber > 0){
-          reversedNumber = (reversedNumber * 10) - (reversedNumber % 10);
+          reversedNumber = (reversedNumber * 10) + (manipulatedNumber % 10);
           manipulatedNumber /= 10;
         }
         boolean palindrome = number == reversedNumber;
